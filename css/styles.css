@@ -1,13 +1,11 @@
-
 :root {
-    --link-color-primary:#db0071;
-    --link-color-visited:#02914a;
-    --link-color-active:#debcfd;
-    --button-color-primary:#f2ece1;
-    --button-font-color:#db0071;
-    --border-bottom-color:rgba(0 0 0 0.3);
-    --grid-item-background-color:#f2ece1; 
-
+        --link-color-primary: #db0071;
+        --link-color-visited: #02914a;
+        --link-color-active: #debcfd;
+        --button-color-primary: #f2ece1;
+        --button-font-color: #db0071;
+        --border-bottom-color: rgba(0 0 0 0.3);
+        --grid-item-background-color: #f2ece1;
 }
 
 .navigation-list__item--active {
@@ -20,7 +18,7 @@ body {
 }
 
 tbody {
-   font-style: italic;
+    font-style: italic;
 }
 
 .container {
@@ -37,12 +35,16 @@ footer {
 
 a {
     color: var(--link-color-primary);
+
     &:visited {
         color: var(--link-color-visited);
     }
-    &:hover, :focus {
+
+    &:hover,
+    :focus {
         text-decoration: none;
     }
+
     &:active {
         color: var(--link-color-active);
     }
@@ -60,10 +62,13 @@ button,
     border-radius: 3px;
     border-bottom: 2px solid var(--border-bottom-color);
     transition: opacity 0.9s;
-    &:hover, :focus {
-        cursor:pointer;
+
+    &:hover,
+    :focus {
+        cursor: pointer;
         opacity: 0.8;
     }
+
     &:visited {
         color: var(--button-font-color);
     }
@@ -89,7 +94,7 @@ button,
 
 .profile {
     max-width: 700px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 * {
@@ -130,10 +135,12 @@ button,
 .grid_item {
     background-color: #f2ece1;
     transition: 0.2s ease;
+
     &:hover {
         transform: scale(1.05);
         cursor: pointer;
     }
+
     &:last-child {
         grid-column-start: 3;
         grid-column-end: 3;
@@ -146,9 +153,11 @@ button,
     0% {
         fill: #edc655;
     }
+
     50% {
         fill: #fcffad;
     }
+
     100% {
         fill: #f76414;
     }
@@ -156,58 +165,63 @@ button,
 
 .sun {
     animation: 4s color-change infinite alternate linear;
-
 }
 
 @keyframes cloud-move {
     from {
         transform: translate(0, 50px);
     }
+
     to {
-        transform: translate(200px, 50px)
+        transform: translate(200px, 50px);
     }
 }
 
 .cloud-front {
-    animation: 30s cloud-move infinite alternate linear
+    animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
     from {
         transform: translate(446px, 48px);
     }
+
     to {
         transform: translate(100px, 48px);
     }
 }
 
 .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media all and (max-width: 750px) {
     .grid {
-      grid-gap: 10px;
+        grid-gap: 10px;
     }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
+    @media all and (min-width: 500px) and (max-width: 750px) {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 }
 
-@media all and (max-width: 500px) {
-    .grid {
-      grid-template-columns: 1fr;
+    @media all and (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
     }
-  }
-  .grid_item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }  
-}
 
+    .grid_item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
 
+    h1 {
+        font-size: 22px;
+    }
+
+    .experience_table {
+        text-align: center;
+    }
