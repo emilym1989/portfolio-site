@@ -1,11 +1,11 @@
 :root {
-        --link-color-primary: #db0071;
-        --link-color-visited: #02914a;
-        --link-color-active: #debcfd;
-        --button-color-primary: #f2ece1;
-        --button-font-color: #db0071;
+        --link-color-primary: #ec515f;
+        --link-color-visited: #161032;
+        --link-color-active: #E4840d;
+        --button-color-primary: #e1bef7;
+        --button-font-color: #161032;
         --border-bottom-color: rgba(0 0 0 0.3);
-        --grid-item-background-color: #f2ece1;
+        --grid-item-background-color: #e1bef7;
 }
 
 .navigation-list__item--active {
@@ -135,6 +135,7 @@ button,
 .grid_item {
     background-color: #f2ece1;
     transition: 0.2s ease;
+    padding: 20px;
 
     &:hover {
         transform: scale(1.05);
